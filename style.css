@@ -1,0 +1,155 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 24px;
+  font-family: Poppins;
+  font-weight: 500;
+  color: white;
+  background-color: #ff7979;
+  background-image: url(./images/bg-intro-mobile.png);
+}
+
+.textbox {
+  text-align: center;
+}
+.textbox h1 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: -0.29px;
+  padding: 64px 0 16px;
+}
+
+.textbox p {
+  line-height: 26px;
+  padding-bottom: 44px;
+}
+
+.bluebox {
+  box-shadow: 0 8px 0 0 rgba(0, 0, 0, 0.1469);
+  background-color: #5e54a4;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+.bluebox p {
+  width: 220px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.whitebox {
+  background-color: #ffffff;
+  box-shadow: 0 8px 0 0 rgba(0, 0, 0, 0.1469);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+input::placeholder {
+  letter-spacing: 0.25px;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+input {
+  height: 56px;
+  width: 279px;
+  border: 1px solid #dedede;
+}
+.whitebox button {
+  background-color: #38cc8b;
+  font-family: Poppins;
+  font-weight: 600;
+  color: white;
+  letter-spacing: 1px;
+  border-radius: 8px;
+  border: none;
+  width: 279px;
+  height: 56px;
+  box-shadow: inset 0 -4px 0 0 rgba(0, 0, 0, 0.0909);
+  cursor: pointer;
+}
+
+.condition {
+  font-weight: 700;
+  line-height: 21px;
+  color: #bab7d4;
+  font-size: 11px;
+  text-align: center;
+  width: 250px;
+}
+.condition span {
+  color: #ff7979;
+}
+
+.error {
+  color: #ff7979;
+  font-size: 11px;
+  font-style: italic;
+  align-self: end;
+  display: none;
+}
+
+/* input:invalid + .name {
+  display: block;
+} */
+
+.icon {
+  position: relative;
+}
+
+.icon img {
+  position: absolute;
+  transform: translate(-150%, 50%);
+}
+
+.icon-name,
+.icon-username,
+.icon-email,
+.icon-password {
+  display: none;
+}
+@media screen and (min-width: 848px) {
+  .textbox p {
+    width: 600px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    flex-direction: row;
+    padding: 121px 0;
+  }
+  .textbox {
+    width: 525px;
+    text-align: start;
+  }
+  .textbox p {
+    width: 480px;
+  }
+  .textbox h1 {
+    width: 425px;
+    font-size: 50px;
+    line-height: 55px;
+    letter-spacing: -0.52px;
+  }
+  .bluebox {
+    width: 540px;
+  }
+  input,
+  .whitebox button {
+    width: 460px;
+  }
+  .condition {
+    width: 389px;
+  }
+  .error {
+    margin-right: 20px;
+  }
+}
